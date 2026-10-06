@@ -2,25 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Simple Contact Form</title>
-            </head>
-            <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-                <h2>Contact Us</h2>
-                    
-                        <!-- The action attribute specifies where to send data. Method "POST" secures user data -->
-                            <form action="/submit-form-endpoint" method="POST">
-                                    
-                                            <!-- Name Field -->
-                                                    <div>
-                                                                <label for="user-name">Full Name:</label><br>
-                                                                            <input type="text" id="user-name" name="name" placeholder="John Doe" required>
-                                                                                    </div>
-                                                                                            <br>
+<header>
+    <nav>
+        <h2 class="logo">MyWebsite</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+</header>
 
-                                                                                                    <!-- Email Field -->
-                                                                                                            <div>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to My Website</h1>
+        <p>A simple and modern website created using HTML and CSS.</p>
+        <a href="register.html" class="btn">Get Started</a>
+    </div>
+</section>
+
+<section class="features">
+    <div class="feature">
+        <h3>Easy Registration</h3>
+        <p>Create your account quickly and easily.</p>
+    </div>
+
+    <div class="feature">
+        <h3>Secure Login</h3>
+        <p>Login to your account using your credentials.</p>
+    </div>
+
+    <div class="feature">
+        <h3>Send Feedback</h3>
+        <p>Share your valuable feedback with us.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 MyWebsite. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
                                                                                                                         <label for="user-email">Email Address:</label><br>
                                                                                                                                     <input type="email" id="user-email" name="email" placeholder="name@example.com" required>
                                                                                                                                             </div>
