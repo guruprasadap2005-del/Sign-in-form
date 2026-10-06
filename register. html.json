@@ -2,114 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Simple Registration Form</title>
-                <style>
-                        /* Modern, centered page layout */
-                                body {
-                                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                                                            background-color: #f4f7f6;
-                                                                        display: flex;
-                                                                                    justify-content: center;
-                                                                                                align-items: center;
-                                                                                                            height: 100vh;
-                                                                                                                        margin: 0;
-                                }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-                                        /* Form container styling */
-                                                .form-container {
-                                                                background-color: #ffffff;
-                                                                            padding: 30px;
-                                                                                        border-radius: 8px;
-                                                                                                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                                                                                                                width: 100%;
-                                                                                                                            max-width: 400px;
-                                                }
+<header>
+    <nav>
+        <h2 class="logo">MyWebsite</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+</header>
 
-                                                        .form-container h2 {
-                                                                        margin-bottom: 20px;
-                                                                                    color: #333333;
-                                                                                                text-align: center;
-                                                        }
+<div class="form-container">
+    <form>
+        <h2>Create Account</h2>
 
-                                                                /* Group styling for input field stacks */
-                                                                        .form-group {
-                                                                                        margin-bottom: 15px;
-                                                                        }
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
-                                                                                .form-group label {
-                                                                                                display: block;
-                                                                                                            margin-bottom: 5px;
-                                                                                                                        color: #666666;
-                                                                                                                                    font-weight: 600;
-                                                                                                                                                font-size: 14px;
-                                                                                }
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-                                                                                        .form-group input {
-                                                                                                        width: 100%;
-                                                                                                                    padding: 10px;
-                                                                                                                                border: 1px solid #ccc;
-                                                                                                                                            border-radius: 4px;
-                                                                                                                                                        box-sizing: border-box; /* Ensures padding doesn't affect width */
-                                                                                                                                                                    font-size: 14px;
-                                                                                        }
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
 
-                                                                                                .form-group input:focus {
-                                                                                                                border-color: #4CAF50;
-                                                                                                                            outline: none;
-                                                                                                }
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
 
-                                                                                                        /* Submit button styling */
-                                                                                                                .submit-btn {
-                                                                                                                                width: 100%;
-                                                                                                                                            padding: 12px;
-                                                                                                                                                        background-color: #4CAF50;
-                                                                                                                                                                    color: white;
-                                                                                                                                                                                border: none;
-                                                                                                                                                                                            border-radius: 4px;
-                                                                                                                                                                                                        font-size: 16px;
-                                                                                                                                                                                                                    font-weight: bold;
-                                                                                                                                                                                                                                cursor: pointer;
-                                                                                                                                                                                                                                            transition: background-color 0.3s;
-                                                                                                                }
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
 
-                                                                                                                        .submit-btn:hover {
-                                                                                                                                        background-color: #45a049;
-                                                                                                                        }
-                                                                                                                            </style>
-                                                                                                                            </head>
-                                                                                                                            <body>
+        <button type="submit">Register</button>
 
-                                                                                                                            <div class="form-container">
-                                                                                                                                <h2>Create an Account</h2>
-                                                                                                                                    <!-- Update 'action' with your backend endpoint processing URL -->
-                                                                                                                                        <form action="/submit-registration" method="POST">
-                                                                                                                                                
-                                                                                                                                                        <!-- Full Name Field -->
-                                                                                                                                                                <div class="form-group">
-                                                                                                                                                                            <label for="fullname">Full Name</label>
-                                                                                                                                                                                        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
-                                                                                                                                                                                                </div>
+        <p class="form-link">
+            Already have an account?
+            <a href="login.html">Login</a>
+        </p>
+    </form>
+</div>
 
-                                                                                                                                                                                                        <!-- Email Field -->
-                                                                                                                                                                                                                <div class="form-group">
-                                                                                                                                                                                                                            <label for="email">Email Address</label>
-                                                                                                                                                                                                                                        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
-                                                                                                                                                                                                                                                </div>
+<footer>
+    <p>&copy; 2026 MyWebsite. All Rights Reserved.</p>
+</footer>
 
-                                                                                                                                                                                                                                                        <!-- Password Field -->
-                                                                                                                                                                                                                                                                <div class="form-group">
-                                                                                                                                                                                                                                                                            <label for="password">Password</label>
-                                                                                                                                                                                                                                                                                        <input type="password" id="password" name="password" placeholder="Min. 8 characters" required>
-                                                                                                                                                                                                                                                                                                </div>
+</body>
+</html>
 
-                                                                                                                                                                                                                                                                                                        <!-- Submit Button -->
-                                                                                                                                                                                                                                                                                                                <button type="submit" class="submit-btn">Register</button>
-                                                                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                                                                            </form>
-                                                                                                                                                                                                                                                                                                                            </div>
+                                                                                     
 
-                                                                                                                                                                                                                                                                                                                            </body>
-                                                                                                                                                                                                                                                                                                                            </html>
-                                                                                                                                                                                                                                                                                                                            
-                                }
+                                
